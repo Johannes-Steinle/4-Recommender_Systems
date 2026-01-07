@@ -1,0 +1,4 @@
+movie_name,expected_top_movie,expected_min_correlation
+Star Wars (1977),Star Wars (1977),1.0
+Liar Liar (1997),Liar Liar (1997),1.0
+Fargo (1996),Fargo (1996),1.0

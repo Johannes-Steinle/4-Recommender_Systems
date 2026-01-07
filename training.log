@@ -1,0 +1,270 @@
+2026-01-07 10:47:24,915 - INFO - Daten erfolgreich geladen und gemergt.
+2026-01-07 10:47:24,916 - INFO - Erstelle Movie-Matrix (Pivot-Table)...
+2026-01-07 10:47:24,948 - INFO - Matrix erstellt in 0.0325 Sekunden.
+2026-01-07 10:47:24,961 - INFO - Suche Empfehlungen für: Star Wars (1977)
+2026-01-07 10:47:25,067 - INFO - Erstelle Movie-Matrix (Pivot-Table)...
+2026-01-07 10:47:25,097 - INFO - Matrix erstellt in 0.0308 Sekunden.
+2026-01-07 10:50:44,810 - INFO - Daten erfolgreich geladen und gemergt.
+2026-01-07 10:50:44,810 - INFO - Erstelle Movie-Matrix (Pivot-Table)...
+2026-01-07 10:50:44,839 - INFO - Matrix erstellt in 0.0290 Sekunden.
+2026-01-07 10:50:44,849 - INFO - Suche Empfehlungen für: Star Wars (1977)
+2026-01-07 10:50:44,965 - INFO - Erstelle Movie-Matrix (Pivot-Table)...
+2026-01-07 10:50:44,997 - INFO - Matrix erstellt in 0.0322 Sekunden.
+2026-01-07 10:51:39,904 - INFO - Daten erfolgreich geladen und gemergt.
+2026-01-07 10:51:39,904 - INFO - Erstelle Movie-Matrix (Pivot-Table)...
+2026-01-07 10:51:39,933 - INFO - Matrix erstellt in 0.0291 Sekunden.
+2026-01-07 10:51:39,943 - INFO - Suche Empfehlungen für: Star Wars (1977)
+2026-01-07 10:51:40,035 - INFO - Erstelle Movie-Matrix (Pivot-Table)...
+2026-01-07 10:51:40,063 - INFO - Matrix erstellt in 0.0288 Sekunden.
+2026-01-07 12:16:18,227 - INFO - Daten erfolgreich geladen und gemergt.
+2026-01-07 12:16:18,228 - INFO - Erstelle Movie-Matrix (Pivot-Table)...
+2026-01-07 12:16:18,255 - INFO - Matrix erstellt in 0.0270 Sekunden.
+2026-01-07 12:16:18,265 - INFO - Suche Empfehlungen für: Star Wars (1977)
+2026-01-07 12:16:18,356 - INFO - Erstelle Movie-Matrix (Pivot-Table)...
+2026-01-07 12:16:18,385 - INFO - Matrix erstellt in 0.0284 Sekunden.
+2026-01-07 12:20:00,733 - INFO - Ran with args: ('U.data', 'Movie_Id_Titles'), and kwargs: {}
+2026-01-07 12:20:00,755 - INFO - load_data ran in: 0.0213 sec
+2026-01-07 12:20:00,758 - INFO - Ran with args: (        user_id  item_id  rating  timestamp                            title
+0             0       50       5  881250949                 Star Wars (1977)
+1             0      172       5  881250949  Empire Strikes Back, The (1980)
+2             0      133       1  881250949        Gone with the Wind (1939)
+3           196      242       3  881250949                     Kolya (1996)
+4           186      302       3  891717742         L.A. Confidential (1997)
+...         ...      ...     ...        ...                              ...
+99998       880      476       3  880175444     First Wives Club, The (1996)
+99999       716      204       5  879795543        Back to the Future (1985)
+100000      276     1090       1  874795795                    Sliver (1993)
+100001       13      225       2  882399156            101 Dalmatians (1996)
+100002       12      203       3  879959583                Unforgiven (1992)
+
+[100003 rows x 5 columns],), and kwargs: {}
+2026-01-07 12:20:00,785 - INFO - fit_model ran in: 0.0269 sec
+2026-01-07 12:20:00,830 - INFO - Ran with args: (title    'Til There Was You (1997)  1-900 (1994)  ...  unknown  Á köldum klaka (Cold Fever) (1994)
+user_id                                           ...                                             
+0                              NaN           NaN  ...      NaN                                 NaN
+1                              NaN           NaN  ...      4.0                                 NaN
+2                              NaN           NaN  ...      NaN                                 NaN
+3                              NaN           NaN  ...      NaN                                 NaN
+4                              NaN           NaN  ...      NaN                                 NaN
+...                            ...           ...  ...      ...                                 ...
+939                            NaN           NaN  ...      NaN                                 NaN
+940                            NaN           NaN  ...      NaN                                 NaN
+941                            NaN           NaN  ...      NaN                                 NaN
+942                            NaN           NaN  ...      NaN                                 NaN
+943                            NaN           NaN  ...      NaN                                 NaN
+
+[944 rows x 1664 columns], 'Star Wars (1977)',                                          rating  num of ratings
+title                                                          
+'Til There Was You (1997)              2.333333               9
+1-900 (1994)                           2.600000               5
+101 Dalmatians (1996)                  2.908257             109
+12 Angry Men (1957)                    4.344000             125
+187 (1997)                             3.024390              41
+...                                         ...             ...
+Young Guns II (1990)                   2.772727              44
+Young Poisoner's Handbook, The (1995)  3.341463              41
+Zeus and Roxanne (1997)                2.166667               6
+unknown                                3.444444               9
+Á köldum klaka (Cold Fever) (1994)     3.000000               1
+
+[1664 rows x 2 columns]), and kwargs: {}
+2026-01-07 12:20:00,915 - INFO - predict_model ran in: 0.0852 sec
+2026-01-07 12:20:00,916 - INFO - Ran with args: (        user_id  item_id  rating  timestamp                            title
+0             0       50       5  881250949                 Star Wars (1977)
+1             0      172       5  881250949  Empire Strikes Back, The (1980)
+2             0      133       1  881250949        Gone with the Wind (1939)
+3           196      242       3  881250949                     Kolya (1996)
+4           186      302       3  891717742         L.A. Confidential (1997)
+...         ...      ...     ...        ...                              ...
+99998       880      476       3  880175444     First Wives Club, The (1996)
+99999       716      204       5  879795543        Back to the Future (1985)
+100000      276     1090       1  874795795                    Sliver (1993)
+100001       13      225       2  882399156            101 Dalmatians (1996)
+100002       12      203       3  879959583                Unforgiven (1992)
+
+[100003 rows x 5 columns],), and kwargs: {}
+2026-01-07 12:20:00,944 - INFO - fit_model ran in: 0.0281 sec
+2026-01-07 13:27:28,887 - INFO - Ran with args: ('U.data', 'Movie_Id_Titles'), and kwargs: {}
+2026-01-07 13:27:28,923 - INFO - load_data ran in: 0.0368 sec
+2026-01-07 13:27:28,927 - INFO - Ran with args: (        user_id  item_id  rating  timestamp                            title
+0             0       50       5  881250949                 Star Wars (1977)
+1             0      172       5  881250949  Empire Strikes Back, The (1980)
+2             0      133       1  881250949        Gone with the Wind (1939)
+3           196      242       3  881250949                     Kolya (1996)
+4           186      302       3  891717742         L.A. Confidential (1997)
+...         ...      ...     ...        ...                              ...
+99998       880      476       3  880175444     First Wives Club, The (1996)
+99999       716      204       5  879795543        Back to the Future (1985)
+100000      276     1090       1  874795795                    Sliver (1993)
+100001       13      225       2  882399156            101 Dalmatians (1996)
+100002       12      203       3  879959583                Unforgiven (1992)
+
+[100003 rows x 5 columns],), and kwargs: {}
+2026-01-07 13:27:28,973 - INFO - fit_model ran in: 0.0458 sec
+2026-01-07 13:27:29,044 - INFO - Ran with args: (title    'Til There Was You (1997)  1-900 (1994)  ...  unknown  Á köldum klaka (Cold Fever) (1994)
+user_id                                           ...                                             
+0                              NaN           NaN  ...      NaN                                 NaN
+1                              NaN           NaN  ...      4.0                                 NaN
+2                              NaN           NaN  ...      NaN                                 NaN
+3                              NaN           NaN  ...      NaN                                 NaN
+4                              NaN           NaN  ...      NaN                                 NaN
+...                            ...           ...  ...      ...                                 ...
+939                            NaN           NaN  ...      NaN                                 NaN
+940                            NaN           NaN  ...      NaN                                 NaN
+941                            NaN           NaN  ...      NaN                                 NaN
+942                            NaN           NaN  ...      NaN                                 NaN
+943                            NaN           NaN  ...      NaN                                 NaN
+
+[944 rows x 1664 columns], 'Star Wars (1977)',                                          rating  num of ratings
+title                                                          
+'Til There Was You (1997)              2.333333               9
+1-900 (1994)                           2.600000               5
+101 Dalmatians (1996)                  2.908257             109
+12 Angry Men (1957)                    4.344000             125
+187 (1997)                             3.024390              41
+...                                         ...             ...
+Young Guns II (1990)                   2.772727              44
+Young Poisoner's Handbook, The (1995)  3.341463              41
+Zeus and Roxanne (1997)                2.166667               6
+unknown                                3.444444               9
+Á köldum klaka (Cold Fever) (1994)     3.000000               1
+
+[1664 rows x 2 columns]), and kwargs: {}
+2026-01-07 13:27:29,156 - INFO - predict_model ran in: 0.1126 sec
+2026-01-07 13:27:29,159 - INFO - Ran with args: (        user_id  item_id  rating  timestamp                            title
+0             0       50       5  881250949                 Star Wars (1977)
+1             0      172       5  881250949  Empire Strikes Back, The (1980)
+2             0      133       1  881250949        Gone with the Wind (1939)
+3           196      242       3  881250949                     Kolya (1996)
+4           186      302       3  891717742         L.A. Confidential (1997)
+...         ...      ...     ...        ...                              ...
+99998       880      476       3  880175444     First Wives Club, The (1996)
+99999       716      204       5  879795543        Back to the Future (1985)
+100000      276     1090       1  874795795                    Sliver (1993)
+100001       13      225       2  882399156            101 Dalmatians (1996)
+100002       12      203       3  879959583                Unforgiven (1992)
+
+[100003 rows x 5 columns],), and kwargs: {}
+2026-01-07 13:27:29,200 - INFO - fit_model ran in: 0.0417 sec
+2026-02-18 15:09:00,930 - INFO - Ran with args: ('U.data', 'Movie_Id_Titles'), and kwargs: {}
+2026-02-18 15:09:00,959 - INFO - load_data ran in: 0.0273 sec
+2026-02-18 15:09:00,961 - INFO - Ran with args: (        user_id  item_id  rating  timestamp                            title
+0             0       50       5  881250949                 Star Wars (1977)
+1             0      172       5  881250949  Empire Strikes Back, The (1980)
+2             0      133       1  881250949        Gone with the Wind (1939)
+3           196      242       3  881250949                     Kolya (1996)
+4           186      302       3  891717742         L.A. Confidential (1997)
+...         ...      ...     ...        ...                              ...
+99998       880      476       3  880175444     First Wives Club, The (1996)
+99999       716      204       5  879795543        Back to the Future (1985)
+100000      276     1090       1  874795795                    Sliver (1993)
+100001       13      225       2  882399156            101 Dalmatians (1996)
+100002       12      203       3  879959583                Unforgiven (1992)
+
+[100003 rows x 5 columns],), and kwargs: {}
+2026-02-18 15:09:00,991 - INFO - fit_model ran in: 0.0282 sec
+2026-02-18 15:09:01,027 - INFO - Ran with args: (title    'Til There Was You (1997)  ...  Á köldum klaka (Cold Fever) (1994)
+user_id                             ...                                    
+0                              NaN  ...                                 NaN
+1                              NaN  ...                                 NaN
+2                              NaN  ...                                 NaN
+3                              NaN  ...                                 NaN
+4                              NaN  ...                                 NaN
+...                            ...  ...                                 ...
+939                            NaN  ...                                 NaN
+940                            NaN  ...                                 NaN
+941                            NaN  ...                                 NaN
+942                            NaN  ...                                 NaN
+943                            NaN  ...                                 NaN
+
+[944 rows x 1664 columns], 'Star Wars (1977)',                                          rating  num of ratings
+title                                                          
+'Til There Was You (1997)              2.333333               9
+1-900 (1994)                           2.600000               5
+101 Dalmatians (1996)                  2.908257             109
+12 Angry Men (1957)                    4.344000             125
+187 (1997)                             3.024390              41
+...                                         ...             ...
+Young Guns II (1990)                   2.772727              44
+Young Poisoner's Handbook, The (1995)  3.341463              41
+Zeus and Roxanne (1997)                2.166667               6
+unknown                                3.444444               9
+Á köldum klaka (Cold Fever) (1994)     3.000000               1
+
+[1664 rows x 2 columns]), and kwargs: {}
+2026-02-18 15:09:01,112 - INFO - predict_model ran in: 0.0848 sec
+2026-02-18 15:09:01,134 - INFO - Ran with args: (title    'Til There Was You (1997)  ...  Á köldum klaka (Cold Fever) (1994)
+user_id                             ...                                    
+0                              NaN  ...                                 NaN
+1                              NaN  ...                                 NaN
+2                              NaN  ...                                 NaN
+3                              NaN  ...                                 NaN
+4                              NaN  ...                                 NaN
+...                            ...  ...                                 ...
+939                            NaN  ...                                 NaN
+940                            NaN  ...                                 NaN
+941                            NaN  ...                                 NaN
+942                            NaN  ...                                 NaN
+943                            NaN  ...                                 NaN
+
+[944 rows x 1664 columns], 'Liar Liar (1997)',                                          rating  num of ratings
+title                                                          
+'Til There Was You (1997)              2.333333               9
+1-900 (1994)                           2.600000               5
+101 Dalmatians (1996)                  2.908257             109
+12 Angry Men (1957)                    4.344000             125
+187 (1997)                             3.024390              41
+...                                         ...             ...
+Young Guns II (1990)                   2.772727              44
+Young Poisoner's Handbook, The (1995)  3.341463              41
+Zeus and Roxanne (1997)                2.166667               6
+unknown                                3.444444               9
+Á köldum klaka (Cold Fever) (1994)     3.000000               1
+
+[1664 rows x 2 columns]), and kwargs: {}
+2026-02-18 15:09:01,209 - INFO - predict_model ran in: 0.0757 sec
+2026-02-18 15:09:01,231 - INFO - Ran with args: (title    'Til There Was You (1997)  ...  Á köldum klaka (Cold Fever) (1994)
+user_id                             ...                                    
+0                              NaN  ...                                 NaN
+1                              NaN  ...                                 NaN
+2                              NaN  ...                                 NaN
+3                              NaN  ...                                 NaN
+4                              NaN  ...                                 NaN
+...                            ...  ...                                 ...
+939                            NaN  ...                                 NaN
+940                            NaN  ...                                 NaN
+941                            NaN  ...                                 NaN
+942                            NaN  ...                                 NaN
+943                            NaN  ...                                 NaN
+
+[944 rows x 1664 columns], 'Fargo (1996)',                                          rating  num of ratings
+title                                                          
+'Til There Was You (1997)              2.333333               9
+1-900 (1994)                           2.600000               5
+101 Dalmatians (1996)                  2.908257             109
+12 Angry Men (1957)                    4.344000             125
+187 (1997)                             3.024390              41
+...                                         ...             ...
+Young Guns II (1990)                   2.772727              44
+Young Poisoner's Handbook, The (1995)  3.341463              41
+Zeus and Roxanne (1997)                2.166667               6
+unknown                                3.444444               9
+Á köldum klaka (Cold Fever) (1994)     3.000000               1
+
+[1664 rows x 2 columns]), and kwargs: {}
+2026-02-18 15:09:01,308 - INFO - predict_model ran in: 0.0764 sec
+2026-02-18 15:09:01,310 - INFO - Ran with args: (        user_id  item_id  rating  timestamp                            title
+0             0       50       5  881250949                 Star Wars (1977)
+1             0      172       5  881250949  Empire Strikes Back, The (1980)
+2             0      133       1  881250949        Gone with the Wind (1939)
+3           196      242       3  881250949                     Kolya (1996)
+4           186      302       3  891717742         L.A. Confidential (1997)
+...         ...      ...     ...        ...                              ...
+99998       880      476       3  880175444     First Wives Club, The (1996)
+99999       716      204       5  879795543        Back to the Future (1985)
+100000      276     1090       1  874795795                    Sliver (1993)
+100001       13      225       2  882399156            101 Dalmatians (1996)
+100002       12      203       3  879959583                Unforgiven (1992)
+
+[100003 rows x 5 columns],), and kwargs: {}
+2026-02-18 15:09:01,336 - INFO - fit_model ran in: 0.0260 sec
