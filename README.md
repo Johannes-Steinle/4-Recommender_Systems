@@ -21,8 +21,13 @@ Dieses Projekt wurde gemäß den Anforderungen für Aufgabe 2 refaktoriert und m
 ### Testergebnisse
 Die Tests wurden erfolgreich ausgeführt:
 ```text
-[Test Fit] Gemessene Dauer: 0.0322s (Limit: 1.5000s)
-Ran 2 tests in 0.214s
+[Test predict()] Top Empfehlung: Star Wars (1977) (Corr: 1.0000)
+.
+[Test fit()] Gemessene Dauer: 0.0296s (Limit: 0.7500s)
+.
+----------------------------------------------------------------------
+Ran 2 tests in 0.212s
+
 OK
 ```
 
